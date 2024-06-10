@@ -71,7 +71,7 @@ We can establish a hierarchy in our text:
 <h6>The Basic Language of the Web: HTML</h6>
 ```
 
-![[Pasted image 20231217201428.png]]
+![image3](https://github.com/melodiaz23/html-css/blob/master/images/Pasted%20image%2020231217201428.png?raw=true)
 
 ### Paragraph
 
@@ -188,7 +188,7 @@ This elements doesn't do anything by its own, just group the elements, but we do
 >  - spacing
 >  - layout
 
-![[Pasted image 20231218205556.png]]
+![image4](https://github.com/melodiaz23/html-css/blob/master/images/Pasted%20image%2020231218205556.png?raw=true)
 
 > The CSS file is always composed of multiple CSS rules.
 
@@ -335,7 +335,7 @@ Besides id theres another way of giving elements names, using class:
 
 ## Colors
 
-![[Pasted image 20231219105421.png]]
+![image5](https://github.com/melodiaz23/html-css/blob/master/images/Pasted%20image%20231219105421.png?raw=true)
 
 ![[Pasted image 20231219105844.png]]
 
