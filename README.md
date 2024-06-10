@@ -12,7 +12,7 @@ This repository contains comprehensive notes on HTML and CSS. It's designed as a
 
 - We say that we have a **dynamic website** when the website is dynamically assembled from different pieces on the server.
 
-![[https://github.com/melodiaz23/html-css/blob/master/images/Pasted%20image%2020231217163123.png?raw=true]]
+![image2](https://github.com/melodiaz23/html-css/blob/master/images/Pasted%20image%2020231217163123.png?raw=true)
 
 # HTML
 
