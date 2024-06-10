@@ -335,7 +335,7 @@ Besides id theres another way of giving elements names, using class:
 
 ## Colors
 
-![image5](https://github.com/melodiaz23/html-css/blob/master/images/Pasted%20image%20231219105421.png?raw=true)
+![image5](https://github.com/melodiaz23/html-css/blob/master/images/Pasted%20image%2020231219105421.png?raw=true)
 
 ![[Pasted image 20231219105844.png]]
 
