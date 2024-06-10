@@ -4,7 +4,7 @@ This repository contains comprehensive notes on HTML and CSS. It's designed as a
 
 ---
 
-![image1](images/Pasted image 20231217160457.png)
+![image1](https://github.com/melodiaz23/html-css/blob/master/images/Pasted%20image%2020231217160457.png?raw=true)
 
 - Whenever the files that make up the website are simply stored on the web server and are then sent to the browser as they are, we say that we have a static website.
 
