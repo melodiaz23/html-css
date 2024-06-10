@@ -1,35 +1,34 @@
 # html-css
+
 This repository contains comprehensive notes on HTML and CSS. It's designed as a reference for front-end development concepts and techniques, including basic to advanced topics. Perfect for students, self-learners, and developers looking to refresh their knowledge or learn new tricks in HTML and CSS.
 
-***
+---
 
-![[Pasted image 20231217160457.png]]
+![image1](images/Pasted image 20231217160457.png)
 
-* Whenever the files that make up the website are simply stored on the web server and are then sent to the browser as they are, we say that we have a static website.
+- Whenever the files that make up the website are simply stored on the web server and are then sent to the browser as they are, we say that we have a static website.
 
-* So, a **static website** es basically a website where the files are simply sent from the server to the browser as they are. 
+- So, a **static website** es basically a website where the files are simply sent from the server to the browser as they are.
 
-* We say that we have a **dynamic website** when the website is dynamically assembled from different pieces on the server.
+- We say that we have a **dynamic website** when the website is dynamically assembled from different pieces on the server.
 
 ![[Pasted image 20231217163123.png]]
 
 # HTML
->HyperText Markup Language
->	- Is a markup language, use to structure and describe the content.
->	- Consists of elements: 
->		- paragraphs
->		- links
->		- headings
->		- images
->		- videos
+
+> HyperText Markup Language - Is a markup language, use to structure and describe the content. - Consists of elements: - paragraphs - links - headings - images - videos
 
 ![[Pasted image 20231217194429.png]]
 
 ## HTML document structure
+
 ```html
-<!DOCTYPE html> <!-- 1. -->
-<html lang="en"> <!-- 2. -->
-  <head> <!-- 3. -->
+<!DOCTYPE html>
+<!-- 1. -->
+<html lang="en">
+  <!-- 2. -->
+  <head>
+    <!-- 3. -->
     <meta charset="UTF-8" />
     <meta
       http-equiv="X-UA-Compatible"
@@ -39,15 +38,17 @@ This repository contains comprehensive notes on HTML and CSS. It's designed as a
       content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body> <!-- 4. -->
+  <body></body>
+  <!-- 4. -->
 </html>
 ```
->Every HTML document always needs to star with HTML element (2.), and inside of it we need one head element (3.) and one body element (4.).
+
+> Every HTML document always needs to star with HTML element (2.), and inside of it we need one head element (3.) and one body element (4.).
 
 - Every HTML document needs to start with the doctype. This let the browser know that we are using HTML.
-- The head element are for things that are not visible in the browser window. Inside of it we have: 
-	- title
-- The body is for all the elements that will be visible on the page. 
+- The head element are for things that are not visible in the browser window. Inside of it we have:
+  - title
+- The body is for all the elements that will be visible on the page.
 
 > [!NOTE]
 > We always need to have an HTML element with a head and with a body. What we put in there is optional but head and body are not optional.
@@ -55,11 +56,13 @@ This repository contains comprehensive notes on HTML and CSS. It's designed as a
 ## Text Elements
 
 ### Headings
->The goal of headings is to break up big blocks of text into more logical sections, and to basically add a title to each of these sections.
 
-We can establish a hierarchy in our text: 
+> The goal of headings is to break up big blocks of text into more logical sections, and to basically add a title to each of these sections.
+
+We can establish a hierarchy in our text:
+
 ```html
-<h1>The Basic Language of the Web: HTML</h1> 
+<h1>The Basic Language of the Web: HTML</h1>
 <!-- Every page should only have one H1 heading -->
 <h2>The Basic Language of the Web: HTML</h2>
 <h3>The Basic Language of the Web: HTML</h3>
@@ -69,26 +72,31 @@ We can establish a hierarchy in our text:
 ```
 
 ![[Pasted image 20231217201428.png]]
+
 ### Paragraph
-> Generic element that we use to mark up bigger blocks of text.
+
+> Generic element that we use to mark up bigger blocks of text.
 
 ```html
 <p>Posted by <strong>Laura Jones</strong> on Monday, <em>June 21st 2027<em></p>
 ```
->Use `<b></b>` and  `<i></i>`is not a good practice. We use `<strong></strong>` and `<em></em>`.
 
+> Use `<b></b>` and `<i></i>`is not a good practice. We use `<strong></strong>` and `<em></em>`.
 
 ### Lists
 
 ```html
-<ol> <!-- Parent element -->
-  <li>The opening tag</li> <!-- Child element -->
+<ol>
+  <!-- Parent element -->
+  <li>The opening tag</li>
+  <!-- Child element -->
   <li>The closing tag</li>
   <li>The actual element</li>
 </ol>
 ```
->`ol` for ordered list and `li` for list items. 
->The container of another elements is the parent and the elements that are inside the parent are the child elements. 
+
+> `ol` for ordered list and `li` for list items.
+> The container of another elements is the parent and the elements that are inside the parent are the child elements.
 
 ```html
 <ul>
@@ -98,42 +106,46 @@ We can establish a hierarchy in our text:
   <li>To have fun 😃</li>
 </ul>
 ```
->`ul` stands for unordered list
+
+> `ul` stands for unordered list
 
 ### Html entity
 
-We find it with `&`and after that the option we want to add: 
+We find it with `&`and after that the option we want to add:
 
 ```html
 Copyright &copy;
 ```
+
 > Copyright ©
 
 Resources: https://css-tricks.com/snippets/html/glyphs/
+
 ## Images and attributes
 
-The image element is a special kind of element. Since It doesn't have content, It doesn't have a closing tack. 
+The image element is a special kind of element. Since It doesn't have content, It doesn't have a closing tack.
 
 ```html
-<img  />
+<img />
 ```
 
-**Attributes** are basically pieces of data which we can use to describe elements. One of this attributes are: 
+**Attributes** are basically pieces of data which we can use to describe elements. One of this attributes are:
 
-* `src=""` --> Here we can specify the source of the image.
-* `alt=""` --> We should never skip. We need to specify here, some text that should describe what the image is about. 
-* `width=""` and `height=""` --> The size of the image
+- `src=""` --> Here we can specify the source of the image.
+- `alt=""` --> We should never skip. We need to specify here, some text that should describe what the image is about.
+- `width=""` and `height=""` --> The size of the image
 
-We can also specify attributes in some other elements: 
+We can also specify attributes in some other elements:
 
-* HTML Element: 
-	* `lang="en"` --> Language
-- `<meta />` --> meta stand for metadata: 
-	- `charset="UTF-8"` --> The character set should be UTF-8, which basically is all the simple characters that we use in the English language.
+- HTML Element:
+  - `lang="en"` --> Language
+
+* `<meta />` --> meta stand for metadata:
+  - `charset="UTF-8"` --> The character set should be UTF-8, which basically is all the simple characters that we use in the English language.
 
 ## Hiperlinks
 
-We have 2 categories: 
+We have 2 categories:
 
 - Links that point to other pages within our own website.
 
@@ -141,78 +153,86 @@ We have 2 categories:
 <a href="blog.html">Blog</a>
 <a href="#">Challanges</a> <!-- Don't go to anywhwere, is like a placeholder link -->
 ```
->What makes and anchor element really a link is the `href` property.
 
-- Links that point to outside of our website. 
+> What makes and anchor element really a link is the `href` property.
+
+- Links that point to outside of our website.
 
 ```html
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
->MDN Web Docs</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a>
 ```
 
 - `href=""` --> We put the url of the page we are going to link.
 - `target="_blank"` --> The page open into a new tab.
 
 ## Semantic HTML
->What this means is that certain elements have actually a meaning or a purpose attached to them. 
 
-* `<nav></nav>` --> Navigation. 
-* `<header></header>` --> Header: Introduction for the website
-* `<article></article>` --> Article
-* `<footer></footer>` --> Foot of the page
-* `<aside></aside>` --> Use for secondary information that complements the information in the main part of the page (usually use as a sidebar).
-* `<div></div>` --> We use it when we don't want to attach a certain meaning to a certain container. 
+> What this means is that certain elements have actually a meaning or a purpose attached to them.
 
-This elements doesn't do anything by its own, just group the elements, but we do it this way (different names) for the semantic HTML and also for stying with CSS. 
+- `<nav></nav>` --> Navigation.
+- `<header></header>` --> Header: Introduction for the website
+- `<article></article>` --> Article
+- `<footer></footer>` --> Foot of the page
+- `<aside></aside>` --> Use for secondary information that complements the information in the main part of the page (usually use as a sidebar).
+- `<div></div>` --> We use it when we don't want to attach a certain meaning to a certain container.
+
+This elements doesn't do anything by its own, just group the elements, but we do it this way (different names) for the semantic HTML and also for stying with CSS.
 
 # CSS
->Cascading Style Sheets
-> - Describes the visual style and presentation of the content written in HTML
-> - Consist of properties:
->	 - font
->	 - text
->	 - spacing
->	 - layout
+
+> Cascading Style Sheets
+>  - Describes the visual style and presentation of the content written in HTML
+>  - Consist of properties:
+>  - font
+>  - text
+>  - spacing
+>  - layout
 
 ![[Pasted image 20231218205556.png]]
->The CSS file is always composed of multiple CSS rules.
+
+> The CSS file is always composed of multiple CSS rules.
+
 ## Inline, Internal and External CSS
 
 **Inlice CSS**
->Writing the CSS code inside of the element. Should usually never be used. 
+
+> Writing the CSS code inside of the element. Should usually never be used.
 
 ```html
 <h1 style="color: rgb(73, 73, 156)">📘 The Code Magazine</h1>
 ```
 
 **Internal CSS**
->We go to the head and declare the style element. Not practical if we have a lot of CSS Code
+
+> We go to the head and declare the style element. Not practical if we have a lot of CSS Code
 
 ```html
-  <head>
-    <style>
-      h1 {
-        color: rgb(63, 63, 196);
-      }
-    </style>
-  </head>
-  ```
+<head>
+  <style>
+    h1 {
+      color: rgb(63, 63, 196);
+    }
+  </style>
+</head>
+```
 
 **External CSS**
->Putting all the CSS code into a special CSS file. 
+
+> Putting all the CSS code into a special CSS file.
 
 ```html
-  <head>
-    <link
-      rel="stylesheet"
-      href="style.css" />
-  </head>
-  ```
->`<link>` element has the purpose to connect the HTML file to a CSS file.
+<head>
+  <link
+    rel="stylesheet"
+    href="style.css" />
+</head>
+```
+
+> `<link>` element has the purpose to connect the HTML file to a CSS file.
 
 ```css
 h1 {
-color: blue;
+  color: blue;
 }
 ```
 
@@ -270,8 +290,9 @@ li {
 }
 ```
 
-We use a descendent selector: 
-```css
+We use a descendent selector:
+
+````css
 footer p {
   font-size: 16px;
 }
@@ -281,21 +302,23 @@ article header p {
 }```
 > It will select all the p elements that are inside of footer elements. But this is not a good idea, since encodes the HTML structure.
 
-Or we can give name to some elements (`id="name"`)and them selected: 
+Or we can give name to some elements (`id="name"`)and them selected:
 
 ```html
  <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
- ```
- >We are not allowed to repeat id names.
+````
+
+> We are not allowed to repeat id names.
 
 ```css
 #author {
   font-style: italic;
 }
 ```
->In our CSS, we can use the id # selector
 
-Besides id theres another way of giving elements names, using class: 
+> In our CSS, we can use the id # selector
+
+Besides id theres another way of giving elements names, using class:
 
 ```html
 <p class="related-author">By Jonas Schmedtmann</p>
@@ -307,14 +330,14 @@ Besides id theres another way of giving elements names, using class:
   font-weight: bold;
 }
 ```
->For classes we use the class (`.`) selector
+
+> For classes we use the class (`.`) selector
 
 ## Colors
 
 ![[Pasted image 20231219105421.png]]
 
 ![[Pasted image 20231219105844.png]]
-
 
 ```css
 aside {
@@ -325,7 +348,6 @@ aside {
 body {
   background-color: #f7f7f7;
 }
-
 ```
 
 ## Pseudo-Classes
@@ -337,7 +359,8 @@ li:first-child {
 li:last-child {
   font-style: italic;
 }
-li:nth-child(2) { /* We need to specify the number child or use keywords (like odd)*/
+li:nth-child(2) {
+  /* We need to specify the number child or use keywords (like odd)*/
   color: red;
 }
 article p:last-child {
@@ -345,7 +368,8 @@ article p:last-child {
   color: red;
 }
 ```
->first-child is the seudo-class. It will select all the li elements that are the first-child elements of its parent elements.
+
+> first-child is the seudo-class. It will select all the li elements that are the first-child elements of its parent elements.
 
 ### Style Hiperlinks
 
@@ -373,16 +397,17 @@ a:active {
   font-style: italic;
 }
 ```
->This forth states are always define in this exact order. 
+
+> This forth states are always define in this exact order.
 
 ## Properties
 
 ### Font
 
-+ font-family: sans-serif;
-+ font-size: 18px;
-+ font-style: italic;
-+ font-weight: bold;
+- font-family: sans-serif;
+- font-size: 18px;
+- font-style: italic;
+- font-weight: bold;
 
 ### Text
 
@@ -399,10 +424,10 @@ a:active {
 - color: `#fff`
 - background-color: `#f7f7f7`;
 - border: 5px solid `#1098ad`;
-	- border-top: 5px solid `#1098ad`;
-	- border-bottom: 5px solid `#1098ad`;
-	- border-left: 5px solid `#1098ad`;
-	- border-right: 5px solid `#1098ad`;
+  - border-top: 5px solid `#1098ad`;
+  - border-bottom: 5px solid `#1098ad`;
+  - border-left: 5px solid `#1098ad`;
+  - border-right: 5px solid `#1098ad`;
 
 ### Link
 
@@ -410,14 +435,15 @@ a:active {
 
 ### Box Model
 
-* margin: 0;
-	* margin-bottom: 60px;
--  padding: 0;
-	- padding-left: 40px;
-	- padding-right: 40px;
-	- padding: 20px 40px;
-- width: 500px;
-- height: 80px;
+- margin: 0;
+  - margin-bottom: 60px;
+
+* padding: 0;
+  - padding-left: 40px;
+  - padding-right: 40px;
+  - padding: 20px 40px;
+* width: 500px;
+* height: 80px;
 
 ## CSS Fundamentals
 
@@ -426,7 +452,8 @@ a:active {
 ![[Pasted image 20231219133613.png]]
 
 ![[Pasted image 20231219133632.png]]
->`*` Universal selector allow apply a certain style to every single element on the page.
+
+> `*` Universal selector allow apply a certain style to every single element on the page.
 
 > [!NOTE]
 > If one selector is way more complex than the other, then many times it's actually the more complex one that gets applied.
@@ -447,7 +474,8 @@ The box model defines how elements are displayed on a webpage and how they are s
 ![[Pasted image 20231219165632.png]]
 
 ```css
-* { /* Global selector to reset margin and padding */
+* {
+  /* Global selector to reset margin and padding */
   margin: 0;
   padding: 0;
 }
@@ -463,15 +491,13 @@ The box model defines how elements are displayed on a webpage and how they are s
 ```
 
 #### Collapsing margins
+
 When we have two margins that occupy the same space, only one of them is actually visible on the page. And that is usually the larger of the two.
-
-
 
 > [!NOTE]
 > Whenever you need some space inside of an element, then you always use padding. On the other hand, in order to create space outside of an element, or also to create space between multiple elements, always use margin.
-> 
+>
 > And in case that you need to add vertical space, then I advise you to most of the time stick to margin and bottom.
-
 
 ```css
 .post-image {
@@ -480,9 +506,10 @@ When we have two margins that occupy the same space, only one of them is actuall
   height: auto;
 }
 ```
-> Specifying the height and setting it to auto is only necessary if that height is already specified before in HTML. So in case we don't specify any image dimensions in HTML, then if we set the height or the width using CSS, the other one will automatically adapt in order to account for the original aspect ratio of the image.
-> 
-> - The percentage is usually the percentage of the width of the parent container.
+
+> Specifying the height and setting it to auto is only necessary if that height is already specified before in HTML. So in case we don't specify any image dimensions in HTML, then if we set the height or the width using CSS, the other one will automatically adapt in order to account for the original aspect ratio of the image.
+>
+> - The percentage is usually the percentage of the width of the parent container.
 
 ```css
 .container {
@@ -515,7 +542,7 @@ When we have two margins that occupy the same space, only one of them is actuall
 
 ![[Pasted image 20231220160117.png]]
 
-Example: 
+Example:
 
 ```html
 <button class="like">Like ❤️</button>
@@ -539,35 +566,37 @@ body {
 }
 
 ```
->We need specific set the position of that parent element to relative. 
+
+> We need specific set the position of that parent element to relative.
 
 ## Pseudo-elements
->Pseudo-elements are elements that don't exist in the HTML but that we can still select and style in CSS.
 
+> Pseudo-elements are elements that don't exist in the HTML but that we can still select and style in CSS.
 
 > [!NOTE]
 > Pseudo classes are written with just one colon, and the pseudo-elements are with two colons.
 
 ```css
-h1::first-letter{
+h1::first-letter {
   font-style: normal;
   margin-right: 5px;
 }
 
-h1::first-line{
+h1::first-line {
   font-style: normal;
   margin-right: 5px;
 }
 ```
 
-+ Siblings elements are when both elements share the same parent. Adjacent sibling is the very next element (that comes after the element)
+- Siblings elements are when both elements share the same parent. Adjacent sibling is the very next element (that comes after the element)
 
-``` css
+```css
 h3 + p::first-line {
   color: red;
 }
 ```
->The plus `+` is the adjacent sibling selector.
+
+> The plus `+` is the adjacent sibling selector.
 
 ### Before and after pseudo-elements
 
@@ -587,8 +616,8 @@ h2::after {
   top: -25px;
 }
 ```
->CSS, once we declare it here, will then automatically create it, and will put it here so that we can style it.
 
+> CSS, once we declare it here, will then automatically create it, and will put it here so that we can style it.
 
 `after` will basically become the very last child element of the one that we are selecting, while `before` will become the very first child element.
 
@@ -598,14 +627,15 @@ Layout is the way text, images and other content is placed and arranged on a web
 
 So, building a layout means to arrange page elements into a visual structure, instead of simply having them placed one after another (normal flow)
 
-There are 2 types of layouts: 
+There are 2 types of layouts:
 
 ![[Pasted image 20231228151156.png]]
 
 ![[Pasted image 20231228152407.png]]
 
 ## Floats Layouts
->When an element is floated, it is removed out of the normal flow.
+
+> When an element is floated, it is removed out of the normal flow.
 
 ```HTML
   <img
@@ -623,7 +653,8 @@ There are 2 types of layouts:
   float: left;
 }
 ```
->The image is basically going to be taken out of the document flow just like an absolutely positioned element. The difference with floats is that all the other elements will basically float around it.
+
+> The image is basically going to be taken out of the document flow just like an absolutely positioned element. The difference with floats is that all the other elements will basically float around it.
 
 ```css
 .author {
@@ -633,41 +664,50 @@ There are 2 types of layouts:
   margin-left: 20px;
 }
 ```
->We have to also make the other element, float. This could be done in a modern way, though.
->- Floated element is still able to create some margins around it.
+
+> We have to also make the other element, float. This could be done in a modern way, though.
+>
+> - Floated element is still able to create some margins around it.
 
 ```css
 h1 {
   float: left;
 }
 
-
 nav {
   float: right;
 }
 ```
->With float is like the elements doesn't exist. This cause a phenomena call the collapsing element. This did happen because both of its children are now floated.
+
+> With float is like the elements doesn't exist. This cause a phenomena call the collapsing element. This did happen because both of its children are now floated.
 
 ![[Pasted image 20231228211225.png]]
 
 ### Clearing floats
 
-- One way (bad practice): 
-1. Create a div element inside the container and clear the floats. 
+- One way (bad practice):
+
+1. Create a div element inside the container and clear the floats.
+
 ```html
 <div class="clear"></div>
 ```
+
 2. In the CSS file, selecting the element, use the clear property.
+
 ```css
 .clear {
   clear: both;
 }
 ```
->Or clear right or left if we want to clear one side or another.
 
-Another way: 
+> Or clear right or left if we want to clear one side or another.
+
+Another way:
+
 1. On the element we has the collapsed heigh, we add a class usually call "clearfix"
 2. And on the CSS: tra
+
 ```css
 .clearfix::after {
   clear: both;
@@ -676,11 +716,11 @@ Another way:
   /* Only works on block level element */
 }
 ```
->This was call "clearfix hack". Is not use anymore.
 
+> This was call "clearfix hack". Is not use anymore.
 
-> [!Useful] 
-> If the width of the container is 1200px, we can divide it into the elements inside of it, like 900px-300px for example. 
+> [!Useful]
+> If the width of the container is 1200px, we can divide it into the elements inside of it, like 900px-300px for example.
 
 ## Flexbox
 
@@ -689,7 +729,7 @@ Another way:
 > [!NOTE]
 > A flex container is also something like a block element.
 
-> 
+>
 
 ## CSS Grid
 
@@ -703,12 +743,10 @@ Another way:
 - HTML validator: https://validator.w3.org/
 - diffchecker: https://www.diffchecker.com/
 
+# Resources
 
-
-# Resources 
 #Resources
 
-+ https://loading.io/css/
-- https://css-tricks.com/snippets/css/complete-guide-grid/#aa-introduction
+- https://loading.io/css/
 
-
+* https://css-tricks.com/snippets/css/complete-guide-grid/#aa-introduction
